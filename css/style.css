@@ -1,0 +1,421 @@
+
+/* =================================
+   GLOBAL ADVENTURES BLOG
+   Основні налаштування
+================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7fa;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* =================================
+   ШАПКА САЙТУ
+================================= */
+
+header {
+    background: #173b57;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+header h1 {
+    font-size: 36px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+/* Головне меню */
+
+header nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    padding: 20px 0 0;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 18px;
+    border-radius: 25px;
+    background: rgba(255, 255, 255, 0.15);
+    transition: background 0.3s ease;
+}
+
+header nav a:hover {
+    background: #e67e22;
+}
+
+/* =================================
+   ОСНОВНИЙ ВМІСТ
+================================= */
+
+main {
+    max-width: 1100px;
+    margin: 30px auto;
+    padding: 20px;
+}
+
+h2 {
+    color: #173b57;
+    margin-bottom: 20px;
+}
+
+h3 {
+    color: #24577a;
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+p {
+    margin-bottom: 15px;
+    line-height: 1.8;
+    color: #444;
+}
+
+/* =================================
+   ГОЛОВНИЙ ВІТАЛЬНИЙ БЛОК
+================================= */
+
+.hero {
+    min-height: 450px;
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+        url("https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=1600") center/cover no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 40px 20px;
+    border-radius: 12px;
+    margin-bottom: 40px;
+}
+
+.hero h2 {
+    color: white;
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    color: white;
+    font-size: 20px;
+    max-width: 650px;
+}
+
+/* =================================
+   КАРТКИ МІСТ
+================================= */
+
+main article {
+    background: white;
+    padding: 25px;
+    margin: 25px 0;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.10);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: fadeIn 0.8s ease;
+}
+
+main article:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+main article h3 {
+    color: #173b57;
+    margin-bottom: 15px;
+}
+
+/* Фотографії в картках */
+
+main article img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    display: block;
+    margin: 15px auto;
+    border-radius: 12px;
+    transition: transform 0.3s ease;
+}
+
+main article img:hover {
+    transform: scale(1.02);
+}
+
+/* Кнопки "Дізнатися більше" */
+
+main article a[href$=".html"] {
+    display: inline-block;
+    background-color: #173b57;
+    color: white;
+    text-decoration: none;
+    padding: 12px 25px;
+    border-radius: 25px;
+    font-weight: bold;
+    margin-top: 15px;
+    transition: all 0.3s ease;
+}
+
+main article a[href$=".html"]:hover {
+    background-color: #e67e22;
+    color: white;
+    transform: translateY(-3px);
+}
+
+/* =================================
+   ЗОБРАЖЕННЯ ТА ПІДПИСИ
+================================= */
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+figure {
+    margin: 25px 0;
+}
+
+figure img {
+    width: 100%;
+    max-height: 420px;
+    object-fit: cover;
+    border-radius: 12px;
+    display: block;
+}
+
+figcaption {
+    text-align: center;
+    color: #667085;
+    font-size: 14px;
+    margin-top: 10px;
+    font-style: italic;
+}
+
+/* =================================
+   РОЗДІЛИ ТА СПИСКИ
+================================= */
+
+main section + section {
+    margin-top: 30px;
+}
+
+main ul {
+    padding-left: 25px;
+    margin-bottom: 20px;
+}
+
+main li {
+    color: #444;
+    line-height: 1.7;
+    margin-bottom: 8px;
+}
+
+main h2 {
+    color: #173b57;
+    font-size: 28px;
+    margin-bottom: 18px;
+}
+
+main h3 {
+    color: #24577a;
+    font-size: 22px;
+    margin-top: 25px;
+    margin-bottom: 12px;
+}
+
+/* =================================
+   ФОТОГАЛЕРЕЯ
+================================= */
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.gallery figure {
+    background: white;
+    padding: 12px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease;
+}
+
+.gallery figure:hover {
+    transform: translateY(-5px);
+}
+
+.gallery img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* =================================
+   ФОРМИ
+================================= */
+
+form {
+    max-width: 650px;
+    margin: 25px auto;
+    padding: 25px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+form label {
+    display: block;
+    margin: 12px 0 6px;
+    font-weight: bold;
+}
+
+form input,
+form textarea,
+form select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    margin-bottom: 12px;
+}
+
+form input[type="checkbox"] {
+    width: auto;
+    margin-right: 8px;
+}
+
+form button,
+form input[type="submit"] {
+    background: #173b57;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+form button:hover,
+form input[type="submit"]:hover {
+    background: #e67e22;
+}
+
+/* =================================
+   ПІДВАЛ САЙТУ
+================================= */
+
+footer {
+    background: #173b57;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+    margin-top: 50px;
+    border-radius: 12px 12px 0 0;
+}
+
+footer p {
+    color: white;
+    margin: 8px 0;
+    font-size: 15px;
+}
+
+/* =================================
+   АНІМАЦІЯ
+================================= */
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* =================================
+   АДАПТАЦІЯ ДЛЯ ТЕЛЕФОНІВ
+================================= */
+
+@media (max-width: 768px) {
+
+    header {
+        padding: 20px 10px;
+    }
+
+    header h1 {
+        font-size: 24px;
+    }
+
+    header nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+    }
+
+    main {
+        padding: 12px;
+        margin: 15px auto;
+    }
+
+    main article {
+        padding: 15px;
+        margin: 20px 0;
+    }
+
+    main article img {
+        height: 220px;
+    }
+
+    .hero {
+        min-height: 350px;
+        padding: 25px 15px;
+    }
+
+    .hero h2 {
+        font-size: 28px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+
+    h2,
+    main h2 {
+        font-size: 22px;
+    }
+
+    main h3 {
+        font-size: 20px;
+    }
+}
+
+

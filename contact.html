@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакти — Global Adventures Blog</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+    <h1>Global Adventures Blog</h1>
+    <nav>
+        <a href="index.html">Головна</a>
+        <a href="paris.html">Париж</a>
+        <a href="santorini.html">Санторіні</a>
+        <a href="new-york.html">Нью-Йорк</a>
+        <a href="gallery.html">Галерея</a>
+        <a href="contact.html">Контакти</a>
+        <a href="subscribe.html">Підписка</a>
+    </nav>
+</header>
+
+<main>
+
+    <h2>Зв'яжіться зі мною</h2>
+
+    <p>
+        Маєте запитання, пропозиції або хочете поділитися
+        власними враженнями від подорожей?
+        Заповніть форму нижче!
+    </p>
+
+    <section>
+
+        <form action="#" method="post">
+
+            <label for="name">Ваше ім'я:</label>
+            <input type="text" id="name" name="name"
+                   placeholder="Введіть ваше ім'я" required>
+
+            <label for="email">Електронна пошта:</label>
+            <input type="email" id="email" name="email"
+                   placeholder="example@gmail.com" required>
+
+            <label for="subject">Тема повідомлення:</label>
+            <select id="subject" name="subject" required>
+                <option value="">Оберіть тему</option>
+                <option value="question">Запитання</option>
+                <option value="suggestion">Пропозиція</option>
+                <option value="other">Інше</option>
+            </select>
+
+            <label for="message">Ваше повідомлення:</label>
+            <textarea id="message" name="message"
+                      rows="6"
+                      placeholder="Напишіть своє повідомлення..."
+                      required></textarea>
+
+            <button type="submit">Надіслати повідомлення</button>
+
+        </form>
+
+    </section>
+
+</main>
+
+<footer>
+    <p>© 2026 Global Adventures Blog</p>
+    <p>Подорожуй, відкривай, надихайся!</p>
+</footer>
+
+</body>
+</html>
+
