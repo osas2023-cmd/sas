@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="World Trivia — цікаві вікторини, факти та головоломки.">
+
+    <title>World Trivia</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- ШАПКА САЙТУ -->
+    <header class="header">
+        <div class="header-container">
+            <h2 class="logo">World <span>Trivia</span></h2>
+
+            <nav aria-label="Головне меню">
+                <ul class="menu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#trivia">Trivia</a></li>
+                    <li><a href="#categories">Categories</a></li>
+                    <li><a href="#scores">Scores</a></li>
+                    <li><a href="#subscribe">Subscribe</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ОСНОВНИЙ ВМІСТ -->
+    <main>
+
+        <!-- HOME -->
+        <section id="home" class="home">
+            <div class="home-content">
+                <p class="subtitle">WELCOME TO WORLD TRIVIA</p>
+
+                <h1>Test Your Knowledge!</h1>
+
+                <p>
+                    Welcome to World Trivia! Here you can test
+                    your knowledge, discover interesting facts
+                    and participate in exciting quizzes.
+                    Explore different categories and become
+                    a trivia champion!
+                </p>
+
+                <a href="#categories" class="main-button">
+                    Explore Categories
+                </a>
+            </div>
+
+            <div class="home-image">
+                <img
+                    src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=700"
+                    alt="Зображення планети Земля з космосу">
+            </div>
+        </section>
+
+        <!-- TRIVIA -->
+        <section id="trivia" class="trivia section">
+            <div class="section-title">
+                <p class="subtitle">DISCOVER SOMETHING NEW</p>
+                <h2>Interesting Trivia</h2>
+                <p>
+                    Learn amazing facts about the world around you.
+                </p>
+            </div>
+
+            <div class="trivia-container">
+
+                <article class="trivia-item">
+                    <img
+                        src="https://images.unsplash.com/photo-1462331940025-496dfbfc7564?w=500"
+                        alt="Зоряне небо та космос">
+
+                    <div>
+                        <h3>Space Facts</h3>
+                        <p>
+                            Space is full of mysteries.
+                            Discover interesting facts about
+                            planets, stars and galaxies.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="trivia-item">
+                    <img
+                        src="https://images.unsplash.com/photo-1519682337058-a94d519337bc?w=500"
+                        alt="Відкрита книга">
+
+                    <div>
+                        <h3>Book Facts</h3>
+                        <p>
+                            Discover interesting information
+                            about famous books, literature
+                            and writers.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="trivia-item">
+                    <img
+                        src="https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?w=500"
+                        alt="Гірський пейзаж">
+
+                    <div>
+                        <h3>World Facts</h3>
+                        <p>
+                            Explore different countries,
+                            continents and the most beautiful
+                            places on Earth.
+                        </p>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- CATEGORIES -->
+        <section id="categories" class="categories section">
+            <div class="section-title">
+                <p class="subtitle">CHOOSE YOUR FAVORITE</p>
+                <h2>Categories</h2>
+                <p>
+                    Choose a category and test your knowledge!
+                </p>
+            </div>
+
+            <ul class="categories-list">
+                <li><a href="#trivia">🔬 Science</a></li>
+                <li><a href="#trivia">🌍 Geography</a></li>
+                <li><a href="#trivia">🏛️ History</a></li>
+                <li><a href="#trivia">🎨 Art</a></li>
+                <li><a href="#trivia">⚽ Sports</a></li>
+                <li><a href="#trivia">🎬 Movies</a></li>
+            </ul>
+        </section>
+
+        <!-- SCORES -->
+        <section id="scores" class="scores section">
+            <div class="section-title">
+                <p class="subtitle">TOP PLAYERS</p>
+                <h2>Leaderboard</h2>
+                <p>
+                    Check out the best World Trivia players.
+                </p>
+            </div>
+
+            <div class="table-container">
+                <table>
+                    <caption class="sr-only">
+                        Таблиця результатів учасників World Trivia
+                    </caption>
+
+                    <thead>
+                        <tr>
+                            <th scope="col">Rank</th>
+                            <th scope="col">Name</th>
+                            <th scope="col">Score</th>
+                            <th scope="col">Country</th>
+                            <th scope="col">Category</th>
+                            <th scope="col">Date</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Alex</td>
+                            <td>980</td>
+                            <td>Ukraine</td>
+                            <td>Science</td>
+                            <td>18.11.2026</td>
+                        </tr>
+
+                        <tr>
+                            <td>2</td>
+                            <td>Maria</td>
+                            <td>940</td>
+                            <td>Poland</td>
+                            <td>History</td>
+                            <td>17.11.2026</td>
+                        </tr>
+
+                        <tr>
+                            <td>3</td>
+                            <td>John</td>
+                            <td>910</td>
+                            <td>Germany</td>
+                            <td>Geography</td>
+                            <td>16.11.2026</td>
+                        </tr>
+
+                        <tr>
+                            <td>4</td>
+                            <td>Sofia</td>
+                            <td>875</td>
+                            <td>France</td>
+                            <td>Art</td>
+                            <td>15.11.2026</td>
+                        </tr>
+
+                        <tr>
+                            <td>5</td>
+                            <td>David</td>
+                            <td>850</td>
+                            <td>Italy</td>
+                            <td>Sports</td>
+                            <td>14.11.2026</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- SUBSCRIBE -->
+        <section id="subscribe" class="subscribe section">
+            <div class="subscribe-content">
+                <p class="subtitle">DAILY CHALLENGE</p>
+
+                <h2>Puzzle of the Day</h2>
+
+                <p>
+                    Get a new puzzle every day!
+                    Challenge yourself and improve your knowledge.
+                </p>
+
+                <button
+                    type="button"
+                    class="subscribe-button"
+                    id="puzzleButton">
+
+                    Subscribe Now
+                </button>
+
+                <p
+                    id="puzzleMessage"
+                    class="success-message"
+                    role="status"
+                    aria-live="polite">
+                </p>
+            </div>
+        </section>
+
+        <!-- CONTACT -->
+        <section id="contact" class="contact section">
+            <div class="section-title">
+                <p class="subtitle">GET IN TOUCH</p>
+                <h2>Contact Us</h2>
+
+                <p>
+                    Have any questions?
+                    Send us a message!
+                </p>
+            </div>
+
+            <form id="contactForm" class="contact-form">
+
+                <label for="name">Your Name</label>
+                <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="Enter your name"
+                    autocomplete="name"
+                    required>
+
+                <label for="email">Your Email</label>
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Enter your email"
+                    autocomplete="email"
+                    required>
+
+                <label for="message">Your Message</label>
+                <textarea
+                    id="message"
+                    name="message"
+                    rows="5"
+                    placeholder="Write your message..."
+                    required></textarea>
+
+                <button type="submit" class="send-button">
+                    Send Message
+                </button>
+
+                <p
+                    id="contactMessage"
+                    class="success-message"
+                    role="status"
+                    aria-live="polite">
+                </p>
+
+            </form>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <h2>World <span>Trivia</span></h2>
+
+        <p>
+            Discover the world.
+            Learn something new every day!
+        </p>
+
+        <p class="copyright">
+            © 2026 World Trivia. All rights reserved.
+        </p>
+    </footer>
+
+    <!-- JAVASCRIPT -->
+    <script>
+        // Кнопка Puzzle of the Day
+        const puzzleButton =
+            document.getElementById("puzzleButton");
+
+        const puzzleMessage =
+            document.getElementById("puzzleMessage");
+
+        puzzleButton.addEventListener("click", function () {
+            puzzleMessage.textContent =
+                "Congratulations! You are subscribed to Puzzle of the Day!";
+        });
+
+        // Контактна форма
+        const contactForm =
+            document.getElementById("contactForm");
+
+        const contactMessage =
+            document.getElementById("contactMessage");
+
+        contactForm.addEventListener("submit", function (event) {
+            event.preventDefault();
+
+            if (contactForm.checkValidity()) {
+                contactMessage.textContent =
+                    "Thank you! Your message has been received.";
+
+                contactForm.reset();
+            }
+        });
+    </script>
+
+</body>
+</html>
+
